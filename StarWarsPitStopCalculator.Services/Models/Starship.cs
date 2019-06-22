@@ -10,5 +10,13 @@ namespace StarWarsPitStopCalculator.Services.Models
         public string Model { get; set; }
         public int? NoOfDaysBetweenPitStops { get; set; }
         public int? MegalightYearsPerHour { get; set; }
+
+        public int? NecesaryNumberOfStops(int distance)
+        {
+            if (!NoOfDaysBetweenPitStops.HasValue || !MegalightYearsPerHour.HasValue)
+                return null;
+            var pitStopsNecessary = distance / (MegalightYearsPerHour.Value * 24) / NoOfDaysBetweenPitStops.Value;
+            return pitStopsNecessary;
+        }
     }
 }

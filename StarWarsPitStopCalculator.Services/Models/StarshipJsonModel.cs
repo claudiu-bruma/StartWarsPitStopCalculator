@@ -11,5 +11,7 @@ namespace StarWarsPitStopCalculator.Services.Models
         public string Consumables { get; set; }
         public string MGLT { get; set; }
         public string Url { get; set; }
+
+      
     }
 }

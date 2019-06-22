@@ -1,17 +1,21 @@
 ﻿
 using StarWarsPitStopCalculator.Services.SWStarshipRepository;
 using System;
+using System.Threading.Tasks;
 
 namespace StartWarsPitStopCalculator
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             var starshipRepo = new SWStarshipRepository();
-            var starshipList = starshipRepo.GetStarships("https://swapi.co/api/starships").GetAwaiter().GetResult() ;
-            Console.Write(starshipRepo);
-            Console.WriteLine("Hello World!");
+            var starshipList = await starshipRepo.GetAllStarships();
+            foreach(var ship in starshipList)
+            {
+                Console.WriteLine($"{ship.Name} : {ship.NecesaryNumberOfStops(100000)}");
+            }
+        
         }
     }
 }
