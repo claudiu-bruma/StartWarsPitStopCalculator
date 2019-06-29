@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarWarsPitStopCalculator.S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StartWarsPitStopCalculator.ConsoleApp", "StartWarsPitStopCalculator\StartWarsPitStopCalculator.ConsoleApp.csproj", "{0F7AE5E4-78E8-40C1-95C5-690F0C1FA400}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarWarsPitStopCalculator.Tests", "StarWarsPitStopCalculator.Tests\StarWarsPitStopCalculator.Tests.csproj", "{3D5C3975-D704-4BBF-B6B8-BCB792793EAB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0F7AE5E4-78E8-40C1-95C5-690F0C1FA400}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F7AE5E4-78E8-40C1-95C5-690F0C1FA400}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F7AE5E4-78E8-40C1-95C5-690F0C1FA400}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D5C3975-D704-4BBF-B6B8-BCB792793EAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D5C3975-D704-4BBF-B6B8-BCB792793EAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D5C3975-D704-4BBF-B6B8-BCB792793EAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D5C3975-D704-4BBF-B6B8-BCB792793EAB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
